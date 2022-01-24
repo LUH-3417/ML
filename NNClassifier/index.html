@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NNTitanic</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <style>
+      body {
+        background-image: url('/Model.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+  <body>
+    <script src="sketch.js"></script>
+
+    <h1 style="color:red;"> RMS TITANIC</h1>
+    <h2 style="color:red;" > April 15th, 1912 Maiden Voyage</h2>
+    <h2 style="color:red;"> Survival Likelihood</h2>
+    
+    <p style="color:white;"> <label> Travel Class: </label>
+      <select id = "division">
+        <option value = "1" >First</option>
+        <option value = "2" >Second</option>
+        <option value = "3" >Third</option>
+      </select>
+    </p>
+
+    <p style="color:white;"> Age: <input id = "age" value = ""/></p>
+    
+    <p style="color:white;"> <label> Gender: </label>
+      <select id = "gender">
+        <option value = "1" >Mr.</option>
+        <option value = "0" >Mrs.</option>
+      </select>
+    </p>
+
+    </p>
+      <button id = "train" >Train Model</button><br><br>
+      <button id = "predict" >Predict</button>
+    </p>
+
+    <h2 style="color:red;" id = "result"></h2>
+
+
+  </body>
+
+  <!-- <body>
+    <script src="table2.js"></script>
+  </body>
+  -->
+
+
+</html>
