@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Space Mono', monospace;
+  src: url(<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">);
+}
+
+
+
 html, body {
   margin: 2em;
   padding: 0;
@@ -5,4 +14,31 @@ html, body {
 
 canvas {
   display: block;
+}
+
+
+/*HTML ELEMENTS*/
+* {
+  text-align: left;
+  color:rgb(100, 180, 218);
+}
+
+h1{
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  font-weight:75;
+  color: red ;
+}
+
+h2{
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight:20;
+  color: blue ;
+}
+
+p{
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight:10; 
 }
